@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OMDSP</string>
+    <string name="heading">Save Lives!</string>
+    <string name="donate">Donate Now!</string>
+    <string name="email_hint">someone@gmail.com</string>
+    <array name="states">
+        <item>Kerala</item>
+        <item>Karnataka</item>
+        <item>Tamil Nadu</item>
+        <item>Maharashtra</item>
+        <item>Telangana</item>
+    </array>
+</resources>
