@@ -3,6 +3,7 @@
     <string name="heading">Save Lives!</string>
     <string name="donate">Donate Now!</string>
     <string name="email_hint">someone@gmail.com</string>
+    <string name="view_donations">View Donations</string>
     <array name="states">
         <item>Kerala</item>
         <item>Karnataka</item>
@@ -10,4 +11,7 @@
         <item>Maharashtra</item>
         <item>Telangana</item>
     </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
