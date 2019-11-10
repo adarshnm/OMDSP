@@ -33,7 +33,7 @@
             app:destination="@id/donateFragment" />
         <action
             android:id="@+id/toViewDonation"
-            app:destination="@id/viewDonationsFragment2" />
+            app:destination="@id/viewDonationsFragment" />
     </fragment>
     <fragment
         android:id="@+id/donateFragment"
@@ -55,10 +55,37 @@
         <action
             android:id="@+id/toRegistration_From_Login"
             app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminFragment"
+            app:destination="@id/adminFragment"
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/viewDonationsFragment2"
+        android:id="@+id/viewDonationsFragment"
         android:name="com.govt.omdsp.ViewDonationsFragment"
         android:label="fragment_view_donations"
         tools:layout="@layout/fragment_view_donations" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.govt.omdsp.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/toAddNGO"
+            app:destination="@id/addNGOFragment" />
+        <action
+            android:id="@+id/toAdminUpdateDonation"
+            app:destination="@id/updateDonationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNGOFragment"
+        android:name="com.govt.omdsp.AddNGOFragment"
+        android:label="fragment_add_ngo"
+        tools:layout="@layout/fragment_add_ngo" />
+    <fragment
+        android:id="@+id/updateDonationsFragment"
+        android:name="com.govt.omdsp.UpdateDonationsFragment"
+        android:label="fragment_update_donations"
+        tools:layout="@layout/fragment_update_donations" />
 </navigation>
