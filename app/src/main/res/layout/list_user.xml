@@ -5,26 +5,26 @@
     android:background="@color/colorPrimary"
     >
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/userNameDonor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="17sp" />
     <TextView
-        android:id="@+id/designation"
+        android:id="@+id/userNGO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/name"
+        android:layout_below="@id/userNameDonor"
         android:textColor="@color/white"
         android:layout_marginTop="7dp"
         android:textSize="14sp" />
     <TextView
-        android:id="@+id/location"
+        android:id="@+id/userDonorDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/designation"
-        android:layout_alignBottom="@+id/designation"
+        android:layout_alignBaseline="@+id/userNGO"
+        android:layout_alignBottom="@+id/userNGO"
         android:layout_alignParentEnd="true"
         android:textColor="@color/white"
         android:textSize="14sp" />

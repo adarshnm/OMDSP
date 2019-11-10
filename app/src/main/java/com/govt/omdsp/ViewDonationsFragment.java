@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.govt.omdsp.Container.DonationsDBHelper;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -21,6 +23,7 @@ import java.util.HashMap;
  * A simple {@link Fragment} subclass.
  */
 public class ViewDonationsFragment extends Fragment {
+    DonationsDBHelper dbHelper;
 
 
     public ViewDonationsFragment() {
@@ -38,19 +41,10 @@ public class ViewDonationsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ArrayList<HashMap<String,String>> userList = new ArrayList<>();
-        HashMap<String,String> user = new HashMap<>();
-        user.put("name","Name1");
-        user.put("designation","Designation1");
-        user.put("location","Location 1");
-        userList.add(user);
-        HashMap<String,String> user2 = new HashMap<>();
-        user2.put("name","Name2");
-        user2.put("designation","Designation2");
-        user2.put("location","Location 2");
-        userList.add(user2);
+        dbHelper = new DonationsDBHelper(getContext());
+        ArrayList<HashMap<String, String>> userList = dbHelper.GetDonationsForUser();
         ListView listView = view.findViewById(R.id.viewDonationsUserList);
-        ListAdapter adapter = new SimpleAdapter(getContext(),userList,R.layout.list_user,new String[]{"name","designation","location"},new int[]{R.id.name,R.id.designation,R.id.location});
+        ListAdapter adapter = new SimpleAdapter(getContext(), userList, R.layout.list_user, new String[]{"name", "ngo", "date"}, new int[]{R.id.userNameDonor, R.id.userNGO, R.id.userDonorDate});
         listView.setAdapter(adapter);
 
     }

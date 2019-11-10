@@ -2,7 +2,6 @@
     <string name="app_name">OMDSP</string>
     <string name="heading">Save Lives!</string>
     <string name="donate">Donate Now!</string>
-    <string name="email_hint">someone@gmail.com</string>
     <string name="view_donations">View Donations</string>
     <array name="states">
         <item>Kerala</item>
@@ -15,4 +14,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_ngo">Add NGO</string>
+    <string name="username">Username</string>
 </resources>

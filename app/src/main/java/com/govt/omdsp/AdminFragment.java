@@ -6,7 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 
 /**
@@ -27,4 +32,23 @@ public class AdminFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_admin, container, false);
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        final NavController navController = Navigation.findNavController(view);
+        CardView addNGOCard = view.findViewById(R.id.addNGOCardAdmin);
+        addNGOCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.toAddNGO);
+            }
+        });
+        CardView viewDonation = view.findViewById(R.id.viewDonationCardAdmin);
+        viewDonation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.toAdminUpdateDonation);
+            }
+        });
+    }
 }

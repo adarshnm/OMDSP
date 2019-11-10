@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/donorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/donorName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorNGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/donorUsername"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/donorNGO"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorSyrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/donorTablet"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorSanitary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/donorSyrup"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/donorSanitary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/donorStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/donorDate"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/updateDonationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/donorStatus"
+        android:text="Set as Picked"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_blue" />
+
+</RelativeLayout>
