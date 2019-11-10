@@ -43,5 +43,7 @@ public class LoginFragment extends Fragment {
                 navController.navigate(R.id.toUserPage);
             }
         });
+
     }
+
 }
